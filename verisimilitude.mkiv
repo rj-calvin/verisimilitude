@@ -1,0 +1,77 @@
+\startenvironment verisimilitude
+
+\unprotect
+
+\mainlanguage[en]
+
+\definemode[standalone][keep]
+
+\definepapersize[octavo][width=6in, height=9in]
+\setuppapersize[octavo][octavo]
+
+\setupbodyfont[12pt]
+
+\setuppagenumbering[
+  alternative=doublesided,
+  location={header,left},
+]
+
+\setuppagenumber[state=stop]
+
+\setuphead[title][page=bigpreference]
+
+\setuptolerance[vertical, verystrict]
+\setuptolerance[horizontal, verytolerant]
+
+\clubpenalty=\plustenthousand
+\widowpenalty=\plustenthousand
+
+\setuplines[
+  before=\empty,
+  after=\empty,
+  indenting=no,
+  space=no,
+]
+
+\setupwhitespace[big]
+\setupblank[white]
+\setbreakpoints[compound]
+\setupinterlinespace[small]
+
+\def\rule{%
+  \par
+  \blank[white]
+  \startalignment[middle]
+  \dontleavehmode
+  \blackrule[
+    width=1in,
+    height=0.4pt,
+    depth=\zeropoint,
+  ]%
+  \stopalignment
+  \blank[line]
+}
+
+\newtoks\everybeforebodypart
+\newtoks\everyafterbodypart
+
+\appendtoks
+  \setuppagenumber[state=start]%
+  \setupheader[state=empty]%
+\to \everybeforebodypart
+
+\setupsectionblock[bodypart][
+  page=yes,
+  before=\the\everybeforebodypart,
+  after=\the\everyafterbodypart,
+]
+
+\startmode[standalone]
+\setuppagenumbering[alternative=singlesided]
+\setuppagenumber[state=start]
+\setupheader[state=empty]
+\stopmode
+
+\protect
+
+\stopenvironment
