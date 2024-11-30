@@ -9,7 +9,7 @@
 \definepapersize[octavo][width=6in, height=9in]
 \setuppapersize[octavo][octavo]
 
-\setupbodyfont[12pt]
+\setupbodyfont[11pt]
 
 \setuppagenumbering[
   alternative=doublesided,
@@ -33,18 +33,17 @@
   space=no,
 ]
 
-\setupwhitespace[big]
-\setupblank[white]
+\setupindenting[yes, medium]
 \setbreakpoints[compound]
 \setupinterlinespace[small]
 
 \def\rule{%
   \par
-  \blank[white]
+  \blank[big]
   \startalignment[middle]
   \dontleavehmode
   \blackrule[
-    width=1in,
+    width=1.5in,
     height=0.4pt,
     depth=\zeropoint,
   ]%
