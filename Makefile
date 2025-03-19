@@ -5,7 +5,7 @@ OUTDIR ?= out
 products = $(patsubst %.tex,%.pdf,$(wildcard *.tex))
 components = $(patsubst %.tex,%.pdf,$(wildcard src/*.tex))
 
-all: $(products) $(components)
+all: $(products)
 
 .PHONY: clean outdir
 
