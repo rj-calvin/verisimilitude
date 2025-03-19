@@ -1,0 +1,422 @@
+local utilitydata = { }
+
+utilitydata.comment={
+ ["escape"]="[===[ ... ]===]",
+ ["file"]="verisimilitude",
+ ["format"]="cont-en",
+ ["stamp"]="2024.02.27 09:18",
+ ["version"]=1.32,
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.variables then utilitydata.job.variables = { } end
+
+utilitydata.job.variables.checksums={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.variables then utilitydata.job.variables = { } end
+
+utilitydata.job.variables.collected={
+ ["macros"]={},
+ ["randomseed"]=0.59198026219383,
+ ["sectionblockorder"]={ "frontpart", "bodypart" },
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.structure then utilitydata.job.structure = { } end
+
+utilitydata.job.structure.collected={
+ ["branches"]={
+  {
+   ["branches"]={
+    {
+     ["branches"]={},
+     ["name"]="verisimilitude",
+     ["type"]="environment",
+    },
+    {
+     ["branches"]={},
+     ["name"]="axioms",
+     ["type"]="component",
+    },
+    {
+     ["branches"]={},
+     ["name"]="spacetime",
+     ["type"]="component",
+    },
+   },
+   ["name"]="verisimilitude",
+   ["type"]="product",
+  },
+ },
+ ["name"]="",
+ ["type"]="text",
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.positions then utilitydata.job.positions = { } end
+
+utilitydata.job.positions.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.passes then utilitydata.job.passes = { } end
+
+utilitydata.job.passes.collected={
+ ["itemgroup:itemize:1"]={
+  { 3, 0 },
+ },
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.datasets then utilitydata.job.datasets = { } end
+
+utilitydata.job.datasets.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.pagestates then utilitydata.job.pagestates = { } end
+
+utilitydata.job.pagestates.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.specials then utilitydata.structures.specials = { } end
+
+utilitydata.structures.specials.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.sections then utilitydata.structures.sections = { } end
+
+utilitydata.structures.sections.collected={
+ {
+  ["block"]="bodypart",
+  ["conversionset"]="default",
+  ["language"]="en",
+  ["numbers"]=1,
+  ["separatorset"]="default",
+  ["set"]="all",
+ },
+ {
+  ["block"]="bodypart",
+  ["conversionset"]="default",
+  ["language"]="en",
+  ["numbers"]=2,
+  ["separatorset"]="default",
+  ["set"]="all",
+ },
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.counters then utilitydata.structures.counters = { } end
+
+utilitydata.structures.counters.collected={
+ ["chemical"]={
+  { 0, 0, 0, 0 },
+ },
+ ["combination"]={
+  { 0 },
+ },
+ ["endnote"]={
+  { 0 },
+ },
+ ["figure"]={
+  { 0, 0, 0, 0 },
+ },
+ ["footnote"]={
+  { 0 },
+ },
+ ["formula"]={
+  { 0, 0, 0, 0 },
+ },
+ ["graphic"]={
+  { 0, 0, 0, 0 },
+ },
+ ["intermezzo"]={
+  { 0, 0, 0, 0 },
+ },
+ ["itemgroup:itemize"]={
+  { 0, 0, 0, 3, 0 },
+ },
+ ["itemgroup:itemize:note"]={
+  { 0, 0, 0, 0 },
+ },
+ ["linenote"]={
+  { 0 },
+ },
+ ["paragraph"]={
+  { 0, 0, 0, 0 },
+ },
+ ["realpage"]={
+  { 5 },
+ },
+ ["subpage"]={
+  { 5 },
+ },
+ ["table"]={
+  { 0, 0, 0, 0 },
+ },
+ ["textnote:note"]={
+  { 0 },
+ },
+ ["userpage"]={
+  { 4 },
+ },
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.lists then utilitydata.structures.lists = { } end
+
+utilitydata.structures.lists.collected={
+ {
+  ["metadata"]=3,
+  ["numberdata"]=5,
+  ["references"]={
+   ["internal"]=1,
+   ["realpage"]=1,
+   ["section"]=0,
+  },
+  ["titledata"]={
+   ["title"]="Verisimilitude",
+  },
+ },
+ {
+  ["metadata"]=6,
+  ["numberdata"]=8,
+  ["references"]={
+   ["internal"]=2,
+   ["realpage"]=1,
+   ["section"]=0,
+  },
+  ["titledata"]={
+   ["title"]="The Structure and Interpretation of Narratives",
+  },
+ },
+ {
+  ["metadata"]=9,
+  ["numberdata"]=10,
+  ["references"]={
+   ["block"]="bodypart",
+   ["component"]="axioms",
+   ["internal"]=3,
+   ["realpage"]=2,
+   ["section"]=1,
+  },
+  ["titledata"]={
+   ["label"]="chapter",
+   ["title"]="Axioms and Dogma",
+  },
+ },
+ {
+  ["metadata"]=9,
+  ["numberdata"]=11,
+  ["references"]={
+   ["block"]="bodypart",
+   ["component"]="spacetime",
+   ["internal"]=4,
+   ["realpage"]=3,
+   ["section"]=2,
+  },
+  ["titledata"]={
+   ["label"]="chapter",
+   ["title"]="Physical Geometry",
+  },
+ },
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.pages then utilitydata.structures.pages = { } end
+
+utilitydata.structures.pages.collected={
+ {
+  ["block"]="frontpart",
+  ["number"]=1,
+  ["numberdata"]=12,
+  ["prefixdata"]=13,
+  ["state"]="stop",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=1,
+  ["numberdata"]=12,
+  ["prefixdata"]=13,
+  ["state"]="start",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=2,
+  ["numberdata"]=12,
+  ["prefixdata"]=13,
+  ["state"]="start",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=3,
+  ["numberdata"]=12,
+  ["prefixdata"]=13,
+  ["state"]="start",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=4,
+  ["numberdata"]=12,
+  ["prefixdata"]=13,
+  ["state"]="start",
+ },
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.references then utilitydata.structures.references = { } end
+
+utilitydata.structures.references.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.references then utilitydata.structures.references = { } end
+
+utilitydata.structures.references.referred={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.objects then utilitydata.job.objects = { } end
+
+utilitydata.job.objects.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.synonyms then utilitydata.structures.synonyms = { } end
+
+utilitydata.structures.synonyms.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.registers then utilitydata.structures.registers = { } end
+
+utilitydata.structures.registers.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.blocks then utilitydata.structures.blocks = { } end
+
+utilitydata.structures.blocks.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.files then utilitydata.job.files = { } end
+
+utilitydata.job.files.collected={
+}
+
+if not utilitydata.publications then utilitydata.publications = { } end
+
+utilitydata.publications.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.fileobjreferences then utilitydata.job.fileobjreferences = { } end
+
+utilitydata.job.fileobjreferences.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.embedded then utilitydata.job.embedded = { } end
+
+utilitydata.job.embedded.collected={
+}
+
+utilitydata.job.packed={
+ ["index"]={
+  { 0, 1 },
+  { 0, 2 },
+  {
+   ["catcodes"]=8,
+   ["coding"]="tex",
+   ["kind"]="section",
+   ["level"]=2,
+   ["name"]="title",
+   ["nolist"]=true,
+  },
+  { 0, 0 },
+  {
+   ["block"]="frontpart",
+   ["conversionset"]="default",
+   ["hidenumber"]=true,
+   ["language"]="en",
+   ["numbers"]=4,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["catcodes"]=8,
+   ["coding"]="tex",
+   ["kind"]="section",
+   ["level"]=3,
+   ["name"]="subject",
+   ["nolist"]=true,
+  },
+  { 0, 0, 0 },
+  {
+   ["block"]="frontpart",
+   ["conversionset"]="default",
+   ["hidenumber"]=true,
+   ["language"]="en",
+   ["numbers"]=7,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["catcodes"]=8,
+   ["coding"]="tex",
+   ["increment"]="yes",
+   ["kind"]="section",
+   ["level"]=2,
+   ["name"]="chapter",
+  },
+  {
+   ["block"]="bodypart",
+   ["conversionset"]="default",
+   ["language"]="en",
+   ["numbers"]=1,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["block"]="bodypart",
+   ["conversionset"]="default",
+   ["language"]="en",
+   ["numbers"]=2,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["conversionset"]="pagenumber",
+  },
+  {
+   ["connector"]="–",
+   ["prefix"]="no",
+   ["set"]="part",
+  },
+ },
+ ["keys"]={
+  ["directives"]=true,
+  ["metadata"]=true,
+  ["numberdata"]=true,
+  ["numbers"]=true,
+  ["ownnumbers"]=true,
+  ["pagedata"]=true,
+  ["prefixdata"]=true,
+  ["processors"]=true,
+  ["sectiondata"]=true,
+  ["specification"]=true,
+ },
+ ["skip"]={
+  ["datasets"]=true,
+  ["positions"]=true,
+  ["userdata"]=true,
+ },
+ ["version"]=1.02,
+}
+
+return utilitydata
