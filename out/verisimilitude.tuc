@@ -47,7 +47,7 @@ utilitydata.job.structure.collected={
     },
     {
      ["branches"]={},
-     ["name"]="byzantine_consensus",
+     ["name"]="consensus",
      ["type"]="component",
     },
    },
@@ -163,10 +163,10 @@ utilitydata.structures.counters.collected={
   { 0, 0, 0, 0, 0 },
  },
  ["realpage"]={
-  { 8 },
+  { 10 },
  },
  ["subpage"]={
-  { 8 },
+  { 10 },
  },
  ["table"]={
   { 0, 0, 0, 0, 0 },
@@ -175,7 +175,7 @@ utilitydata.structures.counters.collected={
   { 0 },
  },
  ["userpage"]={
-  { 7 },
+  { 9 },
  },
 }
 
@@ -242,9 +242,9 @@ utilitydata.structures.lists.collected={
   ["numberdata"]=13,
   ["references"]={
    ["block"]="bodypart",
-   ["component"]="byzantine_consensus",
+   ["component"]="consensus",
    ["internal"]=5,
-   ["realpage"]=6,
+   ["realpage"]=7,
    ["section"]=3,
   },
   ["titledata"]={
@@ -310,6 +310,20 @@ utilitydata.structures.pages.collected={
  {
   ["block"]="bodypart",
   ["number"]=7,
+  ["numberdata"]=14,
+  ["prefixdata"]=15,
+  ["state"]="start",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=8,
+  ["numberdata"]=14,
+  ["prefixdata"]=15,
+  ["state"]="start",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=9,
   ["numberdata"]=14,
   ["prefixdata"]=15,
   ["state"]="start",

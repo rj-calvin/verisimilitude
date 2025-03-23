@@ -71,6 +71,24 @@
 \setupheader[state=empty]
 \stopmode
 
+\usecolors[crayola]
+
+\setuplinenumbering[
+  location=text,
+  color=Gray,
+]
+
+\setupframedtext[width=\textwidth]
+\defineframedtext[framedcode][offset=3mm]
+
+\definetyping[code][
+  numbering=line,
+  bodyfont=small,
+  escape=yes,
+  before={\startframedcode\startsyntaxcolors},
+  after={\stopsyntaxcolors\stopframedcode},
+]
+
 \protect
 
 \stopenvironment

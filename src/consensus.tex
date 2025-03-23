@@ -1,17 +1,20 @@
-\startcomponent byzantine_consensus
+\startcomponent consensus
 
 \chapter{Consensus}
 
-In the study of communication, the Byzantine generals problem is foundational.
-The impossibility theorem that it inspires brings madness to all who understand
-its scope. However, to the optimist, impossibility is the greatest of news
-since knowledge of what is impossible improves the efficiency of our reason.
+In the study of communication, the Byzantine generals problem, as formulated by
+Leslie Lamport, is foundational. The impossibility theorem that it inspires
+brings madness to all who understand its scope. However, to the optimist,
+impossibility is the greatest of news since knowledge of what is impossible
+improves the efficiency of our reason.
 
-Before discourse on the general Byzantine problem can begin, it is first
-necessary to discuss the simpler problem of only two generals. The more general
-problem of the Byzantine generals will be discussed later. Nevertheless, the
-simpler analogy is stated as such:
+Before discourse on the general problem of the Byzantine generals can begin, it
+is first necessary to discuss the simpler problem of only two generals. This
+simpler excersice will be used to inspire a formal definition of
+\emph{consensus} which will be used in later discussion. The formal analogy of
+the two generals is stated as such:
 
+\startframedtext
 Two generals and their armies find themselves on opposite sides of enemy
 territory. The enemy is assumed to be strong enough to repel an attack from one
 army, but not a simultaneous attack from both. Any allied travel through enemy
@@ -23,6 +26,7 @@ communication between the allied leaders is done through messengers sent
 through enemy territory, and thus, the problem of the two generals asks whether
 it is possible for these generals to coordinate a specific time to attack the
 enemy in unison.
+\stopframedtext
 
 The key to understanding the problem is to sympathize with one of the generals.
 This general, eager to initiate an attack, may choose a time then send a
@@ -74,22 +78,42 @@ are not authentically \quotation{simultaneous} in the classical sense.
 Extending the analogy, suppose our generals are clever and have sent scouts to
 study their enemy. The scouts might then discover that the enemy is equipped
 with a large horn to rally troops to defense. If such a discovery is made, a
-general informed of this alarm could reason that they no longer need to
-communicate with their peer in order to coordinate an attack. Instead, if the
+general informed of this alarm could reason that they no longer need to send
+messengers to their peer in order to coordinate an attack. Instead, if the
 general simply initiates the attack immediately, the sound of the enemy's horn
 will signal their ally to join the offensive.
 
 However, this line of reasoning should be insulting to the educated reader.
 Extending an analogy is not a rigorous exercise. But the subsequent
 interpretation, however, can be made rigorous if it is eventually written in a
-formal language.
+formal language. The practice of teleological deduction, then, seems to demand
+of us a certain humility. An admission to the incompleteness of any language
+invented by the mind that is destined for the interpretation of others.
 
-The practice of teleological deduction, then, seems to demand of us a certain
-humility. An admission to the incompleteness of any language invented by the
-mind that is destined for the interpretation of others. Much like the two
-generals, our languages that are deterministic are also symbolic. Thus, the
-generals have no choice but to send messengers if they desire certainty in
-their coordination. In the language of verisimilitude, this certainty is called
-\emph{consensus.}
+If it is our intention to formalize consensus between the two generals, it is
+necessary that we construct a protocol that allows the two generals to use a
+finite number of messengers to maximize the simultaneity of their attack. Since
+this is a new interpretation of the original two generals problem, we must
+first reframe our desired outcome using a new formal analogy:
+
+\startframedtext
+Two generals find themselves on opposite sides of enemy territory while they
+wait for reinforcements. Each general knows the position of the other, but not
+their movements, behavior, or how many reinforcements they have received; each
+knows that their only means of communication is via messengers that must travel
+through treacherous territory; and each knows how to distinguish enemy from
+ally. In addition, the generals are also both aware that the enemy is equipped
+with a horn that will blow whenever an attack begins. The question to be
+answered is whether it is possible for the generals to coordinate an attack
+only when both allied armies have gathered sufficient reinforcements.
+\stopframedtext
+
+The key to the construction is to define how to utilize a game of coinage to
+communicate the rate of reinforcement of one general's army. This rate of
+change is not a measurement in the classical sense, but rather, it is an
+indicator of confidence based on the size of the sending general's army
+relative to the enemy. The next step will then concretely define the
+interpretation of a message and show how this can be used to improve the rigor
+of what is understood as confidence.
 
 \stopcomponent
