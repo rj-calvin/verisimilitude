@@ -37,6 +37,11 @@ utilitydata.job.structure.collected={
     },
     {
      ["branches"]={},
+     ["name"]="experiment_in_rhetorical_narrative",
+     ["type"]="component",
+    },
+    {
+     ["branches"]={},
      ["name"]="axioms",
      ["type"]="component",
     },
@@ -70,6 +75,12 @@ if not utilitydata.job.passes then utilitydata.job.passes = { } end
 
 utilitydata.job.passes.collected={
  ["itemgroup:itemize:1"]={
+  { 4, 0 },
+ },
+ ["itemgroup:itemize:2"]={
+  { 5, 0 },
+ },
+ ["itemgroup:itemize:3"]={
   { 3, 0 },
  },
 }
@@ -120,6 +131,14 @@ utilitydata.structures.sections.collected={
   ["separatorset"]="default",
   ["set"]="all",
  },
+ {
+  ["block"]="bodypart",
+  ["conversionset"]="default",
+  ["language"]="en",
+  ["numbers"]=4,
+  ["separatorset"]="default",
+  ["set"]="all",
+ },
 }
 
 if not utilitydata.structures then utilitydata.structures = { } end
@@ -127,7 +146,7 @@ if not utilitydata.structures.counters then utilitydata.structures.counters = { 
 
 utilitydata.structures.counters.collected={
  ["chemical"]={
-  { 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0 },
  },
  ["combination"]={
   { 0 },
@@ -136,46 +155,46 @@ utilitydata.structures.counters.collected={
   { 0 },
  },
  ["figure"]={
-  { 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0 },
  },
  ["footnote"]={
   { 0 },
  },
  ["formula"]={
-  { 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0 },
  },
  ["graphic"]={
-  { 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0 },
  },
  ["intermezzo"]={
-  { 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0 },
  },
  ["itemgroup:itemize"]={
-  { 0, 0, 0, 3, 0, 0 },
+  { 0, 0, 0, 4, 5, 0, 3, 0, 0 },
  },
  ["itemgroup:itemize:note"]={
-  { 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0 },
  },
  ["linenote"]={
   { 0 },
  },
  ["paragraph"]={
-  { 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0 },
  },
  ["realpage"]={
-  { 10 },
+  { 14 },
  },
  ["subpage"]={
-  { 10 },
+  { 14 },
  },
  ["table"]={
-  { 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0 },
  },
  ["textnote:note"]={
   { 0 },
  },
  ["userpage"]={
-  { 9 },
+  { 13 },
  },
 }
 
@@ -184,8 +203,8 @@ if not utilitydata.structures.lists then utilitydata.structures.lists = { } end
 
 utilitydata.structures.lists.collected={
  {
-  ["metadata"]=4,
-  ["numberdata"]=6,
+  ["metadata"]=5,
+  ["numberdata"]=7,
   ["references"]={
    ["internal"]=1,
    ["realpage"]=1,
@@ -196,8 +215,8 @@ utilitydata.structures.lists.collected={
   },
  },
  {
-  ["metadata"]=7,
-  ["numberdata"]=9,
+  ["metadata"]=8,
+  ["numberdata"]=10,
   ["references"]={
    ["internal"]=2,
    ["realpage"]=1,
@@ -208,14 +227,29 @@ utilitydata.structures.lists.collected={
   },
  },
  {
-  ["metadata"]=10,
-  ["numberdata"]=11,
+  ["metadata"]=11,
+  ["numberdata"]=12,
   ["references"]={
    ["block"]="bodypart",
-   ["component"]="axioms",
+   ["component"]="experiment_in_rhetorical_narrative",
    ["internal"]=3,
    ["realpage"]=2,
    ["section"]=1,
+  },
+  ["titledata"]={
+   ["label"]="chapter",
+   ["title"]="Experiment in Rhetorical Narrative",
+  },
+ },
+ {
+  ["metadata"]=11,
+  ["numberdata"]=13,
+  ["references"]={
+   ["block"]="bodypart",
+   ["component"]="axioms",
+   ["internal"]=4,
+   ["realpage"]=6,
+   ["section"]=2,
   },
   ["titledata"]={
    ["label"]="chapter",
@@ -223,14 +257,14 @@ utilitydata.structures.lists.collected={
   },
  },
  {
-  ["metadata"]=10,
-  ["numberdata"]=12,
+  ["metadata"]=11,
+  ["numberdata"]=14,
   ["references"]={
    ["block"]="bodypart",
    ["component"]="spacetime",
-   ["internal"]=4,
-   ["realpage"]=3,
-   ["section"]=2,
+   ["internal"]=5,
+   ["realpage"]=7,
+   ["section"]=3,
   },
   ["titledata"]={
    ["label"]="chapter",
@@ -238,14 +272,14 @@ utilitydata.structures.lists.collected={
   },
  },
  {
-  ["metadata"]=10,
-  ["numberdata"]=13,
+  ["metadata"]=11,
+  ["numberdata"]=15,
   ["references"]={
    ["block"]="bodypart",
    ["component"]="consensus",
-   ["internal"]=5,
-   ["realpage"]=7,
-   ["section"]=3,
+   ["internal"]=6,
+   ["realpage"]=11,
+   ["section"]=4,
   },
   ["titledata"]={
    ["label"]="chapter",
@@ -261,71 +295,99 @@ utilitydata.structures.pages.collected={
  {
   ["block"]="frontpart",
   ["number"]=1,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="stop",
  },
  {
   ["block"]="bodypart",
   ["number"]=1,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="start",
  },
  {
   ["block"]="bodypart",
   ["number"]=2,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="start",
  },
  {
   ["block"]="bodypart",
   ["number"]=3,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="start",
  },
  {
   ["block"]="bodypart",
   ["number"]=4,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="start",
  },
  {
   ["block"]="bodypart",
   ["number"]=5,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="start",
  },
  {
   ["block"]="bodypart",
   ["number"]=6,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="start",
  },
  {
   ["block"]="bodypart",
   ["number"]=7,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="start",
  },
  {
   ["block"]="bodypart",
   ["number"]=8,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="start",
  },
  {
   ["block"]="bodypart",
   ["number"]=9,
-  ["numberdata"]=14,
-  ["prefixdata"]=15,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
+  ["state"]="start",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=10,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
+  ["state"]="start",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=11,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
+  ["state"]="start",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=12,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
+  ["state"]="start",
+ },
+ {
+  ["block"]="bodypart",
+  ["number"]=13,
+  ["numberdata"]=16,
+  ["prefixdata"]=17,
   ["state"]="start",
  },
 }
@@ -394,6 +456,7 @@ utilitydata.job.packed={
   { 0, 1 },
   { 0, 2 },
   { 0, 3 },
+  { 0, 4 },
   {
    ["catcodes"]=8,
    ["coding"]="tex",
@@ -408,7 +471,7 @@ utilitydata.job.packed={
    ["conversionset"]="default",
    ["hidenumber"]=true,
    ["language"]="en",
-   ["numbers"]=5,
+   ["numbers"]=6,
    ["separatorset"]="default",
    ["set"]="all",
   },
@@ -426,7 +489,7 @@ utilitydata.job.packed={
    ["conversionset"]="default",
    ["hidenumber"]=true,
    ["language"]="en",
-   ["numbers"]=8,
+   ["numbers"]=9,
    ["separatorset"]="default",
    ["set"]="all",
   },
@@ -459,6 +522,14 @@ utilitydata.job.packed={
    ["conversionset"]="default",
    ["language"]="en",
    ["numbers"]=3,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["block"]="bodypart",
+   ["conversionset"]="default",
+   ["language"]="en",
+   ["numbers"]=4,
    ["separatorset"]="default",
    ["set"]="all",
   },
